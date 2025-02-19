@@ -1,7 +1,5 @@
-<?php
-?>
-<nav>
-    <a href="./page_accueil.php"></a>
-    <a href="./page_programmation.php"></a>
-    <a href="./page_contact.php"></a>
-</nav>
+<?php echo"<nav>" ;?>
+    <?php echo"<./page_accueil.php>" ;?>
+    <?php echo"./page_programmation.php" ;?>
+    <?php echo"<./page_contact.php>" ;?>
+<?php echo"</nav>" ;?>
