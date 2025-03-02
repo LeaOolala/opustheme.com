@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title><?= $pageTitle ?></title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
     <header>
+
         <nav>
-            <a href="./page_accueil.php">Accueil</a>
-            <a href="./page_programmation.php">Programmation</a>
-            <a href="./page_contact.php">Contact</a>
+            <form method="POST">
+                <button type="submit" name="page" value="accueil">Accueil</button>
+                <button type="submit" name="page" value="programmation">Programmation</button>
+                <button type="submit" name="page" value="contact">Contact</button>
+            </form>
         </nav>
+
+        <div class="hero" style='<?= $heroBackground ?>'>
+            <h1><?= $heroTitle ?></h1>
+        </div>
     </header>
